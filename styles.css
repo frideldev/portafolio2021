@@ -317,6 +317,25 @@ min-width: 49%;
 .services .content .serviceBox p{
     text-align: center;
 }
+.project ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.project ul li{
+    list-style: none;
+    background: #eee;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.project ul li.active{
+    background: var(--hover);
+    color: #fff;
+}
 .project .content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -328,6 +347,9 @@ min-width: 49%;
     width: 100%;
     height: 300px;
     overflow:hidden;
+}
+.project .content .workBx.hide{
+    display: none; 
 }
 .project .content .workBx .imgBx{
    position: relative;
