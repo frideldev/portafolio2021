@@ -326,7 +326,7 @@ min-width: 49%;
 }
 .project ul li{
     list-style: none;
-    background: #eee;
+    background: var(--white);
     padding: 12px 20px;
     margin: 5px;
     letter-spacing: 1px;
