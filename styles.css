@@ -276,6 +276,66 @@ min-width: 49%;
 .about .content .imgBx img{
     max-width: 100%;
 }
+.about .logros{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+}
+.about .logros .slide{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    border-right: 2px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.about .logros .slide:last-child{
+    border-right: none;
+}
+.about .logros .slide:hover{
+    flex-grow: 5;
+}
+.about .logros .slide:nth-child(1){
+    background: url(images/galeria/startupweekend.jpg);
+    background-position: center;
+    }
+    .about .logros .slide:nth-child(2){
+    background: url(images/galeria/musica.jpg);
+    background-position: center;
+    }
+    .about .logros .slide:nth-child(3){
+    background: url(images/galeria/incubadora.jpg);
+    background-position: center;
+    }
+    .about .logros .slide:nth-child(4){
+    background: url(images/galeria/visionmundial.jpg);
+    background-position: center;
+    }
+    .about .logros .slide:nth-child(5){
+    background: url(images/galeria/servidor.jpg);
+    background-position: center;
+    }
+    .about .logros .slide .content{
+        position: absolute;
+        bottom: 0;
+        margin-top: 40px;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.7);
+         color: #fff; 
+        visibility: hidden;
+        opacity: 0;
+        transition: 0s;
+        transform: translateY(100px);
+    }
+    .about .logros .slide:hover .content{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        transform: translateY(0);
+    }
 .services .content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -605,7 +665,7 @@ padding-right: 10px;
     }
 
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .services .content{
         grid-template-columns: repeat(1,1fr); 
      }
@@ -624,6 +684,12 @@ padding-right: 10px;
      }
      .copyright{
          padding: 10px 20px;
+     }
+     .navigation{
+         height: 50%;
+     }
+     .main .topbar{
+         width: 50%;
      }
   
 }
